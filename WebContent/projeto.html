@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+     <title>Controle de Animes Baixados</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+     <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+          
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="index.html">Controle de Animes Baixados</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+            </a>
+            <a  ng-show="usuario == undefined" class="btn btn-sm btn-outline-secondary" href="cadastro.html">Cadastrar </a>
+            
+          </div>
+          <a ng-show="usuario == undefined" class="btn btn-sm btn-outline-secondary" href="login.html">Entrar</a>
+           <a ng-show="usuario != undefined" class="btn btn-sm btn-outline-secondary" ng-click="removeUsuario()" href="index.html">Sair</a>
+        </div>
+      </header>
+
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" ng-show="usuario != undefined" ng-click="getMeusAnimes(usuario)" href="meusAnimes.html">Meu Animes</a>
+          <a class="p-2 text-muted"  ng-show="usuario != undefined" href="episodiosBaixados.html">Episodios Baixados</a>
+          <a class="p-2 text-muted" ng-show="usuario != undefined" href="episodiosAssistidos.html">Episodios Assistidos</a>
+
+        </nav>
+      </div>
+        </nav>
+      </div>
+
+
+
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+         
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Controle de Animes Baixados</h2>
+            <p class="blog-post-meta">06 de Dezembro, 2018 <a href="https://github.com/ItaloCaio">Ítalo Carvalho</a></p>
+
+            <p>Berto é otaku. Possui uma lista de fansubers que liberam quase instantaneamente os animes lançados no Japão.
+                Ele adora ver animes e, por conseguinte, baixa uma quantidade razoável.
+            </p>
+            <hr>
+            <p>
+              Obviamente que ela raramente compra pois simplesmente estas coisas ocasionalmente vem para o mercado brasileiro (quando aparece a oportunidade, Berto compra quase na hora e se não o faz, fica de olho para identificar uma baixa de preço ou momento propicio (frete grátis, por exemplo)).
+            </p>
+              <p>
+              Mas, há diversos problemas na manutenção do Hobby. Um deles é a facilidade em se perder quais filmes/séries ela já baixou e quais os que ainda faltam. Como ele baixa os animes, deveria ser fácil e Berto realmente se pergunta se não há uma forma automática de mapear o que ele baixou, talvez uma coisa tipo o Calibre? 
+              </p>
+            <p>
+            Há ainda a dificuldade em saber a sequencia em que os filmes/episódios precisam ser vistos. As vezes existem episódios especiais ou filmes entre filmes (ex.: Naruto (a série) e seus filmes (que existem em momentos específicos da cronologia da série)).
+          </p>
+           <p>
+            Obviamente como todo otaku que se preze, Berto gosta de emitir opiniões sobre o que assistiu e possibilitar um rankeamento, inclusive para comparar remakes ou para discutir com amigos ou outros que também tem este hobby.
+            </p>
+            <p>
+            As vezes, raro, mas acontece, Berto fica sem tempo para seu hobby. Nestes casos, séries ou sequencias de filmes podem ficar pela metade (ex.: viu até o 4 episodio da segunda temporada). Neste caso, seria bom que tivesse uma forma de identificar o que ela já viu, para não ter de repetir ou mesmo ficar procurando (ex.: qual episodio de One Piece em que parei mesmo?)
+          </p>
+            
+           
+
+          
+    <footer class="blog-footer">
+      <p>Construído por <a href="https://github.com/ItaloCaio"> Ítalo Carvalho</a> .</p>
+      <p>
+        <a href="#">Voltar para o topo da página</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
+</html>
